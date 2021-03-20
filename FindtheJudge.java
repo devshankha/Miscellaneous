@@ -34,6 +34,14 @@ public class FindtheJudge {
             count[t[0]]--;
             count[t[1]]++;
         }
+	//it can also be done like this	
+	/** int rows = trust.length;
+        System.out.println("MMMMM "+rows);
+        for (int i=0;i < rows;i++) {
+        	count[trust[i][0]]--;
+        	count[trust[0][1]]++;
+        	 
+        } **/
         for (int i = 1; i <= N; ++i) {
             if (count[i] == N - 1) return i;
         }
