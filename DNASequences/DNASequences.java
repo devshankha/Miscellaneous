@@ -1,3 +1,6 @@
+//This is the leetcode problem
+//this code is taken from == https://www.youtube.com/watch?v=0y7pU6PPrc4
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
