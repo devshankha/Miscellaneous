@@ -1,7 +1,8 @@
 //This is to find the number of islands
 //the code is almost taken from 
 // https://www.youtube.com/watch?v=o8S2bO3pmO4&t=15s
-// this used DFS graph approach
+// this used DFS graph approach, BFS will also work
+//actually it looks like we areent doing any BFS or DFS here
 public class NumberOfIslands {
 	static int dsf(int[][]a,int i, int j) {
 		if (i < 0 || i >= a.length  || j < 0 || j >= a[0].length || a[i][j] != 1 ) {
@@ -9,6 +10,7 @@ public class NumberOfIslands {
 			
 			
 		}
+		//we set the 1 to 2 so that we do-not recount it
 		a[i][j]= 2;
 		dsf(a,i-1,j);
 		dsf(a,i+1,j);
