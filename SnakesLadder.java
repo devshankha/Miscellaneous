@@ -18,6 +18,10 @@ reaches a cell is mouth of the snake, has to go down to the tail of snake withou
  *
  */
 
+//Following is the implementation of the above idea. The input is represented by two things, first is ‘N’ which is number of cells in the given board,
+//second is an array ‘move[0…N-1]’ of size N. An entry move[i] is -1 if there is no snake and no ladder from i, otherwise move[i] contains index of destination cell for the 
+//snake or the ladder at i.
+
 public class SnakesLadder {
 	
 	 // An entry in queue used in BFS
