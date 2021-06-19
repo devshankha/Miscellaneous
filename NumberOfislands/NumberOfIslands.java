@@ -2,7 +2,7 @@
 //the code is almost taken from 
 // https://www.youtube.com/watch?v=o8S2bO3pmO4&t=15s
 // this used DFS graph approach, BFS will also work
-//actually it looks like we areent doing any BFS or DFS here
+//actually it looks like we areent doing any BFS or DFS here, just recursion along the four sides
 public class NumberOfIslands {
 	static int dsf(int[][]a,int i, int j) {
 		if (i < 0 || i >= a.length  || j < 0 || j >= a[0].length || a[i][j] != 1 ) {
