@@ -52,6 +52,26 @@ public class FindNextPermutation {
 		while (i < j)
 			swap(l, i++, j--);
 	}
+	    //this is my own implementation and it seems to work
+		public static void nextPermutation(int[] nums) {
+	
+		int k = nums.length-1;
+		int anIndex = k;
+		while (k > 0 && (nums[k-1])> nums[k])
+			k--;
+		if (k == 0) {
+			//System.out.println("Next cannot be found return");
+			Arrays.sort(nums);
+			System.out.println(Arrays.toString(nums));
+			return;
+		}
+		int index = k-1;		
+		swap(nums,anIndex,index);
+		System.out.println(Arrays.toString(nums));
+		
+		
+
+	}	
 
 	public static void main(String[] args) {
 		int[] k = {1,4,5,2,7};
